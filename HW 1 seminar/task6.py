@@ -11,14 +11,22 @@
 # 123456 -> no
 #     001001 -> yes
 
-ticket = input()
-sum = 0
+# ticket = input()
+# sum = 0
 
-for i in range(0, len(ticket)):
-    sum += int(ticket[i])
-    print(sum)
+# for i in range(0, len(ticket)):
+#     sum += int(ticket[i])
+#     print(sum)
     
-if sum % 2 == 0: 
-    print("yes") 
-else:     
+# if sum % 2 == 0: 
+#     print("yes") 
+# else:     
+#     print("no")
+
+number = input("Введите номер билета: ")
+sum_of_first_three = int(number[0]) + int(number[1]) + int(number[2])
+sum_of_last_three = int(number[3]) + int(number[4]) + int(number[5])
+if sum_of_first_three == sum_of_last_three:
+    print("yes")
+else:
     print("no")

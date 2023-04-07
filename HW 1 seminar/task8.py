@@ -13,7 +13,7 @@ m = int(input())
 k = int(input("Сколько долек отломить? "))
 chocolate = n * m
 
-if k % n == 0 or k % m == 0:
+if (k <= chocolate) and (k % n == 0 or k % m == 0):
     print("yes")
 else:
     print("no") 

@@ -10,10 +10,10 @@
 #     60 -> 10  40  10
 #     7 -> "Нельзя определить"
 
-sum_Сranes = int(input())
-if sum_Сranes % 2 == 0: 
-    petya = serezha = (sum_Сranes // 3) // 2
-    katya = 2 * (petya + serezha)
-    print(f"{petya} {katya} {serezha}")
-else:
-    print(f"число: {sum_Сranes} не определяется")
+
+S = int(input("Введите общее количество журавликов: "))
+if not S % 6:
+     x = S // 6
+     print(f'Сережа {x} ')
+     print(f'Катя {x * 4} ')
+     print(f'Петя {x}')
